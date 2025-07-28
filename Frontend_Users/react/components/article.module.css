@@ -1,0 +1,91 @@
+
+.container{
+    width:80%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-self: center;
+}
+.header{
+    height:100px;
+    width:100%;
+    background-color: lightgray;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.home_but{
+    height:50px;
+    font-size:15px;
+    margin-top:30px;
+    margin-bottom:30px;
+    justify-self: center;
+    background-color: lightblue;
+    border-color: transparent;
+    border-radius:5px;
+    cursor:pointer;
+}
+.title{
+    align-self: center;
+    font-size:30px;
+    font-weight: 700;
+}
+.img_container{
+    width:100%;
+    height:400px;
+    position:relative;
+}
+.img_container>img{
+    width:inherit;
+    height:400px;
+    position:absolute;
+    object-fit: contain;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    opacity:1;
+}
+.content{
+    line-height: 30px;
+    font-size:20px;
+}
+.comments{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.comment_form{
+    display:flex;
+}
+.comment{
+    background-color: gray;
+    height:auto;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+    margin-bottom:30px;
+    padding-left:10px;
+}
+.comment_title{
+    font-weight: 700;
+    font-size:20px;
+    align-self: flex-start;
+}
+.username{
+    align-self:flex-start;
+}
+.submit{
+        height:50px;
+    font-size:15px;
+    margin-top:30px;
+    margin-bottom:30px;
+    justify-self: center;
+    background-color: lightblue;
+    border-color: transparent;
+    border-radius:5px;
+    cursor:pointer;
+    align-self: center;
+}

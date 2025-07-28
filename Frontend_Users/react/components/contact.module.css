@@ -1,0 +1,19 @@
+.contact_container{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+}
+.contact_container>h1{
+    align-self: center;
+}
+.contact_container>div{
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact_container>div>div{
+    display: flex;
+    flex-direction: column;
+}
+
