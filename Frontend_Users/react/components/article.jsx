@@ -13,7 +13,7 @@ export function Article(){
         let data=async () => {
             const token=localStorage.getItem("token");
             const id=searchParams.get("id");
-            let res=await fetch(`https://blog-api-yuv6.onrender.com/article?id=${id}`,{
+            let res=await fetch(`https://blog-api-itq8.onrender.com/article?id=${id}`,{
                 headers : {
                     "authorization" :  `Bearer ${token}`,
                 }
@@ -29,7 +29,7 @@ export function Article(){
         e.preventDefault();
         const id=searchParams.get("id");
         const token=localStorage.getItem("token");
-        let res=await fetch(`https://blog-api-yuv6.onrender.com/AddComment?id=${id}`,{
+        let res=await fetch(`https://blog-api-itq8.onrender.com/AddComment?id=${id}`,{
             method:"POST",
             headers:{
                 "authorization" : `Bearer ${token}`,
@@ -50,7 +50,7 @@ export function Article(){
     async function fetchArticle() {
   const token = localStorage.getItem("token");
   const id = searchParams.get("id");
-  const res = await fetch(`https://blog-api-yuv6.onrender.com/article?id=${id}`, {
+  const res = await fetch(`https://blog-api-itq8.onrender.com/article?id=${id}`, {
     headers: {
       authorization: `Bearer ${token}`,
     },
@@ -64,7 +64,7 @@ export function Article(){
             <div className={styles.header}>
             <Link to="/home"><button className={styles.home_but}>Go Back</button></Link>
             </div>
-                <div className={styles.img_container}><img src={`https://blog-api-yuv6.onrender.com/${article["cover_page"]}`} /></div>
+                <div className={styles.img_container}><img src={`https://blog-api-itq8.onrender.com/${article["cover_page"]}`} /></div>
                 <p className={styles.title}>Title : {article["title"]}</p>
                 <p className={styles.content}>{article["content"]}</p>
                 <div className={styles.comments}>
@@ -89,7 +89,7 @@ export function Article(){
             <div className={styles.header}>
             <Link to="/home"><button className={styles.home_but}>Go Back</button></Link>
             </div>
-                <div className={styles.img_container}><img src={`https://blog-api-yuv6.onrender.com/${article["cover_page"]}`} /></div>
+                <div className={styles.img_container}><img src={`https://blog-api-itq8.onrender.com/${article["cover_page"]}`} /></div>
                 <p className={styles.title}>Title : {article["title"]}</p>
                 <p className={styles.content}>{article["content"]}</p>
                 <div className={styles.comments}>

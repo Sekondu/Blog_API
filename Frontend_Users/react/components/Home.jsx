@@ -9,7 +9,7 @@ export function Home(){
     useEffect(() => {
         async function data() {
             const token=localStorage.getItem('token');
-        let things=await fetch("https://blog-api-yuv6.onrender.com/Articles",{
+        let things=await fetch("https://blog-api-itq8.onrender.com/Articles",{
             method:"POST",
             headers : {
                 'authorization' : `Bearer ${token}`
