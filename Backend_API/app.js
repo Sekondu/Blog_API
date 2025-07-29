@@ -11,7 +11,7 @@ const multer=require("multer");
 const app=express();
 
 const allowedOrigins=[
-    "https://blog-api-yuv6.onrender.com/",
+    "https://blog-api-1-oyld.onrender.com",
 ]
 
 app.use(express.urlencoded({extended:true}));
