@@ -19,7 +19,7 @@ function Add(){
             if(img) {
                 formdata.append("img",img);
             }
-            let response=await fetch(`http://localhost:3000/AddArticle`,{
+            let response=await fetch(`https://blog-api-ffu8.onrender.com/AddArticle`,{
                 method:"POST",
                 headers : {"authorization" : `Bearer ${token}`},
                 body:formdata,

@@ -14,7 +14,7 @@ export function SignUp(){
     const handleSubmit=async (e) => {
         e.preventDefault();
         console.log("CMONNN");
-        await fetch("http://localhost:3000/signup",{
+        await fetch("https://blog-api-ffu8.onrender.com/signup",{
             method:"POST",
             headers : {
                 "Content-Type":"application/json"

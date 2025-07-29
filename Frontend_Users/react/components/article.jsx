@@ -64,7 +64,7 @@ export function Article(){
             <div className={styles.header}>
             <Link to="/home"><button className={styles.home_but}>Go Back</button></Link>
             </div>
-                <div className={styles.img_container}><img src={`http://localhost:3000/${article["cover_page"]}`} /></div>
+                <div className={styles.img_container}><img src={`https://blog-api-ffu8.onrender.com/${article["cover_page"]}`} /></div>
                 <p className={styles.title}>Title : {article["title"]}</p>
                 <p className={styles.content}>{article["content"]}</p>
                 <div className={styles.comments}>
