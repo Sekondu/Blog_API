@@ -8,7 +8,6 @@ const jwt=require("jsonwebtoken");
 const path=require("path");
 const cors=require("cors");
 const multer=require("multer");
-require("dotenv").config(path.resolve(__dirname,".env"));
 const app=express();
 
 app.use(express.urlencoded({extended:true}));
