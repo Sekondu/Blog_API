@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
     let allData=async () => {
       let token=localStorage.getItem("token");
-      let res=await fetch(`https://blog-api-yk96.onrender.com/AdminArticles`,{
+      let res=await fetch(`https://blog-api-yuv6.onrender.com/AdminArticles`,{
         method:"POST",headers:{"authorization" : `Bearer ${token}`}
       })
       let articles=await res.json();
@@ -26,7 +26,7 @@ function App() {
   async function handleSubmit(e,id){
     e.preventDefault();
     let token=localStorage.getItem("id");
-    let res=await fetch(`https://blog-api-yk96.onrender.com/delete?id=${id}`,{
+    let res=await fetch(`https://blog-api-yuv6.onrender.com/delete?id=${id}`,{
       method:"POST",
       headers : {"authorization": `Bearer ${token}`},
     }
@@ -56,7 +56,7 @@ function App() {
             <form onSubmit={(e)=> handleSubmit(e,article.id)}>
             <button className={styles.remove_btn} type="submit">Remove Article</button>
             </form>
-            <img className={styles.admin_imgs} src={`https://blog-api-yk96.onrender.com/${article.cover_page}`} alt="" />
+            <img className={styles.admin_imgs} src={`https://blog-api-yuv6.onrender.com/${article.cover_page}`} alt="" />
             <p>{article.title}</p>
             <p>{article.content.length>60 ? article.content.slice(0,60) + "..." : article.content}</p>
             <p>{article.comments.length} comments</p>
