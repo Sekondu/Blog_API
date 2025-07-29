@@ -14,6 +14,7 @@ const allowedOrigins=[
     "https://blog-api-1-oyld.onrender.com",
 ]
 
+
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 
