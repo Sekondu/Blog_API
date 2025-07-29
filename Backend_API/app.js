@@ -17,6 +17,8 @@ const allowedOrigins=[
 
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+
 
 const corsOptions = {
   origin: function (origin, callback) {
@@ -24,7 +26,7 @@ const corsOptions = {
     if (allowedOrigins.indexOf(origin) !== -1) {
       callback(null, true);
     } else {
-      callback(new Error("Not allowed by CORS"));
+      callback(null,false);
     }
   },
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
