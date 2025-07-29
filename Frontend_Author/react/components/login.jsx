@@ -12,7 +12,7 @@ export function Login(){
         e.preventDefault();
         
         try{
-            const res=await fetch("https://blog-api-ffu8.onrender.com/Adminlogin",{
+            const res=await fetch("https://blog-api-yk96.onrender.com/Adminlogin",{
                 method:'POST',
                 headers:{ 'Content-Type': 'application/json'},
                 body: JSON.stringify({username,password}),

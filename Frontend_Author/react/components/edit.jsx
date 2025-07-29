@@ -43,7 +43,7 @@ function Edit(){
 
         let id=searchParams.get("id");
         let token=localStorage.getItem("token");
-        let res=await fetch(`https://blog-api-ffu8.onrender.com/article?id=${id}`,{
+        let res=await fetch(`https://blog-api-yk96.onrender.com/article?id=${id}`,{
             method:"PUT",
             headers:{"authorization" : `Bearer ${token}`},
             body:formData,
