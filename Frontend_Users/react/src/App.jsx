@@ -46,6 +46,7 @@ function Header(){
      <Link to="/Home" className={clicked==="home" ? styles.active : ""} onClick={() => handleClick("home")}>Home</Link>
       <Link to="/about" className={clicked==="about" ? styles.active : ""} onClick={() => handleClick("about")} >About</Link>
       <Link to="/contact" className={clicked==="contact" ? styles.active : ""} onClick={() => handleClick("contact")} >Contact</Link>
+      <a className={clicked==="admin" ? styles.active : ""} onClick={() => handleClick("admin")}>Admin</a>
     </div>
     <p className={styles.copyright}>Copyright @2025 All Rights Reserved | This template is made with love by Rwid</p>
   </nav>
